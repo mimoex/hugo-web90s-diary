@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ $pages := where .Site.RegularPages "Type" "diary" }}
+  {{ $sorted := sort $pages "Date" "desc" }}
+  {{ $latest := index $sorted 0 }}
+  {{ with $latest }}
+    <h1>{{ .Title }}</h1>
+    <div class="entries">
+      {{ .Content }}
+    </div>
+    <div class="month-nav">
+      {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}">« 昔</a>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <div class="entries">
+    {{ .Content }}
+  </div>
+
+  <div class="month-nav">
+    <div class="prev">
+      {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}">« 昔</a>
+      {{ end }}
+    </div>
+    <div class="next">
+      {{ with .NextInSection }}
+        {{ $next := . }}
+        {{ $pages := where $.Site.RegularPages "Type" "diary" }}
+        {{ $sorted := sort $pages "Date" "desc" }}
+        {{ $latest := index $sorted 0 }}
+        {{ if eq $next.RelPermalink $latest.RelPermalink }}
+          <a href="/">今月 »</a>
+        {{ else }}
+          <a href="{{ $next.RelPermalink }}">未来 »</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

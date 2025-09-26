@@ -1,0 +1,6 @@
+<div class="entry">
+  <div class="entry-date">{{ .Get "date" }}</div>
+  <div class="entry-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
