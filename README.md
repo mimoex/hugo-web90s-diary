@@ -5,7 +5,6 @@ A retro 90s-style diary theme for [Hugo](https://gohugo.io/).
 
 ![screenshot](screenshot.webp)
 
----
 
 ## Features
 
@@ -13,14 +12,13 @@ A retro 90s-style diary theme for [Hugo](https://gohugo.io/).
 - モバイル対応（レスポンシブデザイン）
 - カスタマイズしやすいレイアウトとスタイル
 
----
 
 ## Installation
 
 テーマを `themes/` ディレクトリに追加してください。
 
 ```bash
-git submodule add https://github.com/yourname/web90s-diary.git themes/web90s-diary
+git submodule add https://github.com/mimoex/hugo-web90s-diary.git themes/hugo-web90s-diary
 ```
 
 `hugo.toml` に以下を追記します。
@@ -43,7 +41,7 @@ Theme code: MIT License (see [LICENSE](LICENSE))
 
 ## Background Image
 
-このテーマはデフォルトで[朝顔の背景](https://www.schoolicons.com/web/backgrnd/mor/mor_ba.html)を利用する想定ですが、画像ファイルは同梱していません。
+このテーマはデフォルトで[朝顔の背景](https://www.schoolicons.com/web/backgrnd/mor/mor_ba.html)を利用する想定ですが、画像ファイルは同梱していません。  
 必要な方は [School Icons CLUB](https://www.schoolicons.com/)より直接ダウンロードしてください。
 
 - 商用・個人利用可、加工可
