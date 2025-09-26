@@ -3,7 +3,7 @@
 A retro 90s-style diary theme for [Hugo](https://gohugo.io/).  
 方眼紙背景に朝顔をあしらった、ノスタルジックな日記風テーマです。
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.webp)
 
 ---
 
